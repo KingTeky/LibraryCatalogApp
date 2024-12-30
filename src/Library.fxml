@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="LibraryController">
+    <children>
+        <TextField fx:id="titleField" layoutX="14.0" layoutY="14.0" promptText="Title" />
+        <TextField fx:id="authorField" layoutX="14.0" layoutY="44.0" promptText="Author" />
+        <TextField fx:id="itemIDField" layoutX="14.0" layoutY="74.0" promptText="Item ID" />
+        <Button fx:id="addButton" layoutX="14.0" layoutY="104.0" text="Add Item" />
+        <Button fx:id="removeButton" layoutX="94.0" layoutY="104.0" text="Remove Item" />
+        <TableView fx:id="tableView" layoutX="14.0" layoutY="144.0" prefHeight="200.0" prefWidth="300.0">
+            <columns>
+                <TableColumn fx:id="titleColumn" text="Title" />
+                <TableColumn fx:id="authorColumn" text="Author" />
+                <TableColumn fx:id="itemIDColumn" text="Item ID" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
